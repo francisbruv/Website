@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('loginForm').addEventListener('submit', function(e) {e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            window.location.href = 'index.html';
+             });
+          });
+        </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -145,7 +156,7 @@ Bootstrap 5 Form Pack Template
                     <div class="row">
 
                         <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form login-form" role="form" id="loginForm">
+                            <form class="custom-form login-form" method="get" id="loginForm">
                                 <h2 class="hero-title text-center mb-4 pb-2">Login Form</h2>
 
                                 <div class="form-floating mb-4 p-0">
